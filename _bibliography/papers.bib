@@ -1,115 +1,39 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+@inproceedings{intervalvm,
+abbr={SOSP},
+author = {Kim, Tae Woo and Kwon, Youngjin and Kang, Jeehoon},
+title = {Scalable Address Spaces using Concurrent Interval Skiplist},
+year = {2025},
+isbn = {9798400718700},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3731569.3764807},
+abstract = {A kernel's address space design can significantly bottleneck multi-threaded applications, as address space operations such as mmap() and munmap() are serialized by coarse-grained locks like Linux's mmap_lock. Such locks have long been known as one of the most intractable contention points in memory management. While prior works have attempted to address this issue, they either fail to sufficiently parallelize operations or are impractical for real-world kernels.
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+We present the first scalable and practical address space design that parallelizes critical operations. We identify key scalability bottlenecks—many of which extend beyond address spaces—and address them with targeted solutions. At its core is the concurrent interval skiplist, a new data structure that integrates mapping and locking for parallel interval operations. We implement our design on Linux 6.8 and evaluate it on a dual-socket 48-core machine. Our results show a significant throughput improvement of 13.1× for an mmap() microbenchmark, 4.49× for LevelDB, 3.19× for the Apache web server, 1.47× for Metis MapReduce, and 1.27× for Psearchy text indexing.},
+booktitle = {Proceedings of the ACM SIGOPS 31st Symposium on Operating Systems Principles (Accepted)},
+location = {Seoul, Republic of Korea},
+series = {SOSP '25},
+artifact = {https://github.com/kaist-cp/interval-vm},
+selected = {true},
 }
+# doi = {10.1145/3731569.3764807},
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@article{rv6,
+abbr={SCICO},
+title = {Taming shared mutable states of operating systems in Rust},
+journal = {Science of Computer Programming},
+volume = {238},
+pages = {103152},
+year = {2024},
+issn = {0167-6423},
+doi = {https://doi.org/10.1016/j.scico.2024.103152},
+url = {https://www.sciencedirect.com/science/article/pii/S0167642324000753},
+author = {Jaemin Hong and Sunghwan Shim and Sanguk Park and Tae Woo Kim and Jungwoo Kim and Junsoo Lee and Sukyoung Ryu and Jeehoon Kang},
+keywords = {Shared mutable state, Operating system, Rust},
+abstract = {Operating systems (OSs) suffer from pervasive memory bugs. Their primary source is shared mutable states, crucial to low-level control and efficiency. The safety of shared mutable states is not guaranteed by C/C++, in which legacy OSs are typically written. Recently, researchers have adopted Rust into OS development to implement clean-slate OSs with fewer memory bugs. Rust ensures the safety of shared mutable states that follow the “aliasing XOR mutability” discipline via its type system. With the success of Rust in clean-slate OSs, the industry has become interested in rewriting legacy OSs in Rust. However, one of the most significant obstacles to this goal is shared mutable states that are aliased AND mutable (A&M). While they are essential to the performance of legacy OSs, Rust does not guarantee their safety. Instead, programmers have identified A&M states with the same reasoning principle dubbed an A&M pattern and implemented its modular abstraction to facilitate safety reasoning. This paper investigates modular abstractions for A&M patterns in legacy OSs. We present modular abstractions for six A&M patterns in the xv6 OS. Our investigation of Linux and clean-slate Rust OSs shows that the patterns are practical, as all of them are utilized in Linux, and the abstractions are original, as none of them are found in the Rust OSs. Using the abstractions, we implemented xv6Rust, a complete rewrite of xv6 in Rust. The abstractions incur no run-time overhead compared to xv6 while reducing the reasoning cost of xv6Rust to the level of the clean-slate Rust OSs.},
+artifact = {https://github.com/kaist-cp/rv6},
+selected = {true},
 }

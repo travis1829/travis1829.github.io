@@ -1,6 +1,6 @@
 ---
 layout: cv
-permalink: /cv/
+permalink: https://docs.google.com/document/d/1A_6aqz38EPm8hSgbsrMIo9d7dt6MNZr6G-Hpmkl5Q6s/edit?usp=sharing
 title: cv
 nav: true
 nav_order: 5

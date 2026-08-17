@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://cs.kaist.ac.kr/'>KAIST School of Computing</a>. Master's Student.
+subtitle: PhD student. <a href='https://eecs.berkeley.edu/'>UC Berkeley EECS</a>.
 
 profile:
   align: right
@@ -24,14 +24,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Master's student at KAIST School of Computing, currently advised by [Prof. Youngjin Kwon](https://sites.google.com/view/yjkwon/home).
-From March 2024 to July 2025, I was also fortunate to be advised by [Prof. Jeehoon Kang](https://cp.kaist.ac.kr/jeehoon.kang/).
+I am a PhD student at [UC Berkeley EECS](https://eecs.berkeley.edu/), co-advised by [Prof. Rishabh Iyer](https://rishabh246.github.io/) and [Prof. Ion Stoica](https://people.eecs.berkeley.edu/~istoica/).
+Previously, I earned my Master's degree from [KAIST School of Computing](https://cs.kaist.ac.kr/), where I was fortunate to be advised by [Prof. Youngjin Kwon](https://sites.google.com/view/yjkwon/home) and [Prof. Jeehoon Kang](https://cp.kaist.ac.kr/jeehoon.kang/).
 
-My research interests are in computer systems, especially operating systems and concurrency.
+My research interests are in computer systems, especially memory management and concurrency.
 You can find my detailed CV [here](https://docs.google.com/document/d/1A_6aqz38EPm8hSgbsrMIo9d7dt6MNZr6G-Hpmkl5Q6s/edit?usp=sharing).
 
 <br />
 <h2><a id="education">education</a></h2>
 
-* M.S. in KAIST School of Computing, 2026 (Expected), **GPA 4.24/4.3**
+* M.S. in KAIST School of Computing, 2026, **GPA 4.25/4.3**
 * B.S. in KAIST School of Computing, 2024, **GPA 4.24/4.3, Summa Cum Laude**
